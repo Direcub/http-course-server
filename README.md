@@ -7,7 +7,7 @@ This server is designed to handle the posting and retrieval of "chirps"; a fake 
 This server was built using **GO** 1.24 and **PostrgreSQL** 15.12
 
 After setting up your SQL database find your connection string and create a .env file in the servers directory. Assign your connection string such that it looks like this
-"DB_URL="yourconnectionstring". Here you will also set your "secret" and "POLKA_KEY". The secret can be any arbitrary string but i recommend using something to generate one.
+"DB_URL="yourconnectionstring". Here you will also set your "secret" and "POLKA_KEY" similarly. The secret can be any arbitrary string but i recommend using something to generate one.
 The POLKA_KEY is similar in that it can be just about anything, just make sure anything thats making secure requests to the server also has this key. After all this is setup you
 can run "go build ." to create an exe that will run the server when executed. As a side note make sure all requests default to "Localhost:####/app/" 
 
